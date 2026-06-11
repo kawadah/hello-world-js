@@ -4,6 +4,6 @@
   "license": "MIT",
   "exports": {
     ".": "./src/index.ts",
-    "cli": "./src/cli.ts"
+    "./cli": "./src/cli.ts"
   }
 }
