@@ -1,3 +1,3 @@
-import { helloWorld } from "."
+import { helloWorld } from "./index.ts"
 
 console.log(helloWorld())

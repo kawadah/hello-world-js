@@ -37,7 +37,10 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-    "moduleResolution": "bundler"
+    "moduleResolution": "bundler",
+
+    "allowImportingTsExtensions": true,
+    "noEmit": true
   },
   "include": ["src/"]
 }
