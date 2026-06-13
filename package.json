@@ -12,6 +12,7 @@
     "@arethetypeswrong/cli": "^0.18.3",
     "@types/node": "^24.12.4",
     "publint": "^0.3.21",
+    "tsdown": "^0.22.2",
     "typescript": "^6.0.3"
   },
   "license": "MIT",
