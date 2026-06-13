@@ -9,7 +9,9 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.3",
     "@types/node": "^24.12.4",
+    "publint": "^0.3.21",
     "typescript": "^6.0.3"
   },
   "license": "MIT",
