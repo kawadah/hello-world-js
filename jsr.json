@@ -7,9 +7,6 @@
     "./cli": "./src/cli.ts"
   },
   "publish": {
-    "include": [
-      "src/**/*",
-      "*.md"
-    ]
+    "include": ["src/**/*", "*.md"]
   }
 }
