@@ -1,4 +1,4 @@
 allowBuilds: {}
 blockExoticSubdeps: true
-minimumReleaseAge: 4320
+minimumReleaseAge: 4320 # 3d
 trustPolicy: no-downgrade
