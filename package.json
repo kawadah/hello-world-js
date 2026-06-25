@@ -25,7 +25,7 @@
     "format": "oxfmt --check .",
     "format:fix": "oxfmt .",
     "packcheck": "publint && attw --pack --profile esm-only .",
-    "prepack": "npm run build",
+    "prepack": "pnpm run build",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
