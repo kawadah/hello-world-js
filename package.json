@@ -23,10 +23,15 @@
   },
   "scripts": {
     "build": "tsdown",
-    "format": "oxfmt --check .",
-    "format:fix": "oxfmt .",
+    "check": "pnpm run format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && pnpm run packcheck",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
     "packcheck": "publint && pnpm pack --out .out.tgz && attw --profile esm-only .out.tgz",
     "prepack": "pnpm run build",
+    "test": "vitest run",
+    "test:update": "vitest run -u",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
@@ -34,9 +39,11 @@
     "@types/node": "^24.12.4",
     "jsr": "^0.14.3",
     "oxfmt": "^0.54.0",
+    "oxlint": "^1.71.0",
     "publint": "^0.3.21",
     "tsdown": "^0.22.2",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
   },
   "devEngines": {
     "packageManager": {
