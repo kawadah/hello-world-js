@@ -2,7 +2,7 @@ name: Publish
 
 on:
   push:
-    branches: [main]
+    tags: [v*]
 
 permissions: {}
 
@@ -38,6 +38,4 @@ jobs:
           registry-url: https://registry.npmjs.org
       - uses: pnpm/action-setup@0e279bb959325dab635dd2c09392533439d90093 # v6.0.8
       - run: pnpm install
-      # - run: pnpm publish
-      - run: pnpm run build
-      - run: npm publish
+      - run: pnpm publish
