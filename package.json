@@ -24,7 +24,7 @@
     "build": "tsdown",
     "format": "oxfmt --check .",
     "format:fix": "oxfmt .",
-    "packcheck": "publint && attw --pack --profile esm-only .",
+    "packcheck": "publint && pnpm pack --out .out.tgz && attw --profile esm-only .out.tgz",
     "prepack": "pnpm run build",
     "typecheck": "tsc --noEmit"
   },
